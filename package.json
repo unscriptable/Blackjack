@@ -1,0 +1,25 @@
+{
+  "name": "tetrascience",
+  "version": "1.0.0",
+  "description": "Messing around with Blackjack",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --copy-files --out-dir build src",
+    "repl": "babel-node",
+    "dev": "NODE_ENV=dev babel-node .",
+    "start": "node .",
+    "test": "babel-node ./test",
+    "test-debug": "SHOW_STACK=1 babel-node ./test"
+  },
+  "dependencies": {
+      "creed": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-async-to-module-method": "^6.16.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-preset-es2015-node6": "^0.4.0"
+  },
+  "author": "john@unscriptable.com",
+  "license": "MIT"
+}

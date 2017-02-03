@@ -1,0 +1,11 @@
+{
+  "presets": ["es2015-node6"],
+  "plugins": [
+    /*"syntax-flow", "transform-flow-strip-types",*/
+    "transform-class-properties",
+    ["transform-async-to-module-method", {
+      "module": "creed",
+      "method": "coroutine"
+    }]
+  ]
+}
