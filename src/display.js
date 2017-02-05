@@ -1,5 +1,9 @@
 // Display functions
 
+// Given an output function (`display`) having a signature similar to
+// `console.log`, return a function that will output string representations.
+
+// Create a display function for showing the game status.
 export const displayStatus =
     display => {
         const displayRound = game => display(showRound(game))
@@ -11,10 +15,13 @@ export const displayStatus =
         }
     }
 
+// Create a display function for the results of a "deal" (when a player
+// receives a card from a deck).
 export const displayDeal =
     display => (_, { id }) =>
         display(`Player ${id} takes a hit...`)
 
+// Create a display function for the final game status.
 export const displayFinal =
     display => {
         const displayPlayer = player => display(showPlayer(player))
